@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/azul"
+    >
+
+    <TextView
+        android:id="@+id/descontos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:text="Descontos"
+        android:textSize="40dp" />
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="140dp"
+        android:src="@drawable/money"
+        />
+
+    <EditText
+        android:id="@+id/edtnome"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/img"
+        android:layout_marginLeft="30dp"
+        android:hint="nome"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/sexo"
+        android:layout_below="@+id/edtnome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="sexo"
+        android:textSize="30dp"
+        android:layout_marginLeft="40dp"
+        />
+
+    <RadioGroup
+        android:id="@+id/rgs"
+        android:layout_below="@+id/sexo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+      <RadioButton
+          android:id="@+id/rbM"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/rgs"
+          android:hint="masculo"
+          android:textSize="30dp"
+          android:layout_marginLeft="40dp"
+/>
+
+    <RadioButton
+        android:id="@+id/rbF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rbM"
+        android:hint="Feminino"
+        android:textSize="30dp"
+        android:layout_marginLeft="40dp"
+        />
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/edtFilhos"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/rgs"
+        android:layout_marginLeft="30dp"
+        android:hint="N- Filhos"
+        android:textSize="30dp" />
+
+    <EditText
+        android:id="@+id/edtSalario"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/edtFilhos"
+        android:layout_marginLeft="30dp"
+        android:hint="Salario Bruto R$"
+        android:textSize="30dp" />
+
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/edtSalario"
+        android:layout_marginLeft="30dp"
+        android:hint="Calcular"
+        android:textSize="30dp" />
+
+
+</RelativeLayout>
